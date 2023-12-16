@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int n, a, i, k, pare, s = 0;
+
+int main()
+{
+    cin >> n >> k;
+    
+    for(i = 1; i <= n; i ++)
+    {
+        cin >> a;
+        
+        if(a % 2 == 0)
+        {
+            pare ++;   
+        }
+        
+        if(a % k == 0)
+        {
+            s += a;
+        }
+    }
+    
+    cout << s << ' ' << pare;
+
+    return 0;
+}
